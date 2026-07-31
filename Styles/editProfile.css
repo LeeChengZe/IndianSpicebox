@@ -1,0 +1,230 @@
+@font-face {
+    font-family: Calibri;
+    src: url(../Fonts/Calibri\ Regular.ttf);
+  }
+
+section {
+    font-family: Calibri;
+}
+
+.dashContainer {
+    margin-top: 30px;
+    background-color: #ffdfbf;
+    padding-bottom: 50px;
+}
+
+.dashboardTop {
+    background-color: #ffb347;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+}
+
+.profilePic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.username {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.logout {
+    width: 35px;
+    height: 35px;
+}
+
+.dashboardBottom {
+    display: flex;
+}
+
+.sideMenu {
+    width: fit-content;
+}
+
+.sideMenu li{
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #ffb347;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.sideMenu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.sideMenu li:hover {
+    background-color: #ff8c00;
+}
+
+.Content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Header {
+    margin: 10px 0;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+}
+
+.userDetail {
+    margin-top: 5px;
+    border: none;
+    height: 50px;
+    padding-left: 15px;
+    background-color: white;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.userDetail:focus{
+    box-shadow: inset 0 0 10px #d3d3d3;
+    outline: none;
+}
+
+#uaddr {
+    margin-top: 5px;
+    border: none;
+    padding-left: 15px;
+    background-color: white;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    resize: none;
+    font-family: Calibri;
+}
+  
+#uaddr:focus{
+    box-shadow: inset 0 0 10px #d3d3d3;
+    outline: none;
+}
+
+.submit {
+    color: white;
+    font-size: 1.125em;
+    font-family: Verdana;
+    font-weight: bold;
+    transition: all 0.3s;
+    padding: 15px 20px;
+    background-color: #ff8c00;
+    border: none;
+    margin: 20px 0;
+}
+  
+.submit:hover {
+    background-color: black;
+}
+
+#uprofpic {
+    font-size: 16px;
+    background-color: white;
+    outline: none;
+    margin-bottom: 20px;
+  }
+  
+  ::-webkit-file-upload-button {
+    margin-top: 5px;
+    color: white;
+    background-color: #ff8c00;
+    padding: 10px;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+    font-weight: bold;
+  }
+  
+  ::-webkit-file-upload-button:hover {
+    background-color: black;
+  }
+
+  #passwordRequire {
+    display:none;
+    background: white;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #passwordRequire p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+@media screen and (max-width: 768px) { 
+    .sideMenu li{
+        font-size: 1.25em;
+        margin-right: 15px;
+    }
+    .userDetail {
+        height: 40px;
+        width: 95%;
+        font-size: 16px;
+    }
+    .submit {
+        font-size: 1em;
+    }
+    #uaddr {
+        width: 95%;
+        font-size: 16px;
+    }
+
+    #uprofpic {
+        font-size: 14px;
+    }
+    #passwordRequire {
+        width: 95%;
+      }
+      
+      #passwordRequire p {
+        font-size: 14px;
+      }
+}
+
+@media screen and (max-width: 480px) { 
+    .sideMenu li{
+        font-size: 1.125em;
+    }
+}

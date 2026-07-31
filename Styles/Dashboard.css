@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Calibri;
+    src: url(../Fonts/Calibri\ Regular.ttf);
+  }
+
+section {
+    font-family: Calibri;
+}
+
+.dashContainer {
+    margin-top: 30px;
+    background-color: #ffdfbf;
+    padding-bottom: 50px;
+}
+
+.dashboardTop {
+    background-color: #ffb347;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+}
+
+.profilePic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.username {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.logout {
+    width: 35px;
+    height: 35px;
+}
+
+.dashboardBottom {
+    display: flex;
+}
+
+.sideMenu {
+    width: fit-content;
+}
+
+.sideMenu li{
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #ffb347;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.sideMenu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.sideMenu li:hover {
+    background-color: #ff8c00;
+}
+
+.Content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Content p {
+    font-size: 1.25em;
+}
+
+.Header {
+    margin: 10px 0;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.notUser {
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.notUser:hover {
+    color: #ff8c00;
+}
+
+@media screen and (max-width: 768px) { 
+    .sideMenu li{
+        font-size: 1.25em;
+        margin-right: 15px;
+    }
+    .Content p {
+        font-size: 1.125em;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    .sideMenu li{
+        font-size: 1.125em;
+    }
+    .Content p {
+        font-size: 1em;
+    }
+}

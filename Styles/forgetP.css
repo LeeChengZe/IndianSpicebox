@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Calibri;
+    src: url(../Fonts/Calibri\ Regular.ttf);
+  }
+  
+section {
+    font-family: Calibri;
+}
+
+.forgetContainer {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 60px;
+  background-color: #f8f8f8;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.passwordContainer {
+    background-color: white;
+    padding: 20px;
+    width: 60%;
+}
+
+.logo {
+    background-image: url(../Images/SpiceboxLogo.jpg);
+    background-size: cover;
+    height: 125px;
+    width: 125px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 18px;
+  }
+
+.userInfo {
+    margin-top: 5px;
+    border: none;
+    height: 50px;
+    padding-left: 15px;
+    background-color: #ebebeb;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .userInfo::placeholder {
+    color: #222;
+  }
+  
+  .userInfo:focus{
+    box-shadow: inset 0 0 10px #8ea896;
+    outline: none;
+  }
+  
+  #submit {
+    color: white;
+    font-size: 1.125em;
+    font-family: Verdana;
+    font-weight: bold;
+    transition: all 0.3s;
+    padding: 15px 20px;
+    background-color: #ff8c00;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  #submit:hover {
+    background-color: black;
+  }
+
+  #passwordRequire {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #passwordRequire p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+@media screen and (max-width: 768px) {
+  .passwordContainer {
+    width: 95%;
+  }
+}
